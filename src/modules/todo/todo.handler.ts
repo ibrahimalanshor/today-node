@@ -1,5 +1,7 @@
+import { TodoModel } from './model/todo.model';
+
 export class TodoHandler {
   async getAll() {
-    return [];
+    return await TodoModel.find();
   }
 }
