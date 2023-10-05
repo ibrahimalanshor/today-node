@@ -7,7 +7,7 @@ export class TodoHandler {
   }
   async create(context: RouterContext) {
     return await TodoModel.create({
-      name: context.req.body,
+      name: context.body.name,
     });
   }
 }
